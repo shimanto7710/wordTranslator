@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.BlankFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <!--<com.miguelcatalan.materialsearchview.MaterialSearchView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/search_view"-->
+            <!--app:searchBackground="@color/colorPrimary"-->
+            <!--app:searchSuggestionBackground="@color/colorPrimary"-->
+            <!--app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"-->
+            <!--app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"-->
+            <!--app:searchSuggestionIcon="@drawable/ic_suggestion">-->
+        <!--</com.miguelcatalan.materialsearchview.MaterialSearchView>-->
+
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/sView"
+            android:clickable="true"
+            android:background="#999955"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Word"
+            android:inputType="textPersonName"
+            android:textColor="#0000FF">
+
+        </android.support.v7.widget.SearchView>
+
+
+        <!--<SearchView-->
+            <!--android:id="@+id/sView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@drawable/search_color"-->
+            <!--android:gravity="center"-->
+            <!--android:iconifiedByDefault="false"-->
+            <!--android:queryHint="Search Word"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:textColor="#0000FF" >-->
+        <!--</SearchView>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/button"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/recyclerView"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CropImageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <!--<Button-->
+            <!--android:id="@+id/txtBtn"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/activity_horizontal_margin"-->
+            <!--android:text="Test"-->
+            <!--tools:ignore="InvalidId" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="onLoadImageClick"-->
+            <!--android:padding="@dimen/activity_horizontal_margin"-->
+            <!--android:text="Image" />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scrollbars="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/footer"-->
+        <!--style="@android:style/ButtonBar"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:onClick="onLoadImageClick"-->
+            <!--android:id="@+id/more_option"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".1"-->
+            <!--app:srcCompat="@drawable/ic_unfold_more_black_24dp"-->
+            <!--tools:ignore="VectorDrawableCompat" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/count_txt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="18 Item"-->
+            <!--android:textColor="#ffffff" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/capture_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight=".1"-->
+            <!--app:srcCompat="@drawable/ic_text_format_black_24dp"-->
+            <!--tools:ignore="VectorDrawableCompat" />-->
+    <!--</LinearLayout>-->
+
+    <!--<com.theartofdev.edmodo.cropper.CropImageView-->
+    <!--android:id="@+id/CropImageView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--app:scaleType="fitCenter"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/cropBtn"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="@dimen/activity_horizontal_margin"-->
+    <!--android:text="Crop Image"-->
+    <!--android:onClick="onCropImageClick"/>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_photo_camera_black_24dp"
+        android:layout_margin="25sp"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

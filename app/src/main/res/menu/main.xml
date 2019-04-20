@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:icon="@drawable/ic_close_black_24dp"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/action_settings"-->
+        <!--app:showAsAction="never" />-->
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always"
+        tools:ignore="DuplicateIds">
+        <menu>
+            <item
+                android:id="@+id/text"
+                android:icon="@drawable/ic_text_format_black_24dp"
+                android:title="Import Text"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/gallery"
+                android:icon="@drawable/ic_photo_library_black_24dp"
+                android:title="Import From Gallery"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/file"
+                android:icon="@drawable/ic_insert_drive_file_black_24dp"
+                android:title="Import From File Manager"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+</menu>
